@@ -1,7 +1,12 @@
 from maths import Maths
+
 solve = Maths()
+
+from phy import Physics
+
+solve = Physics()
 d = input("Will you like to perform (M)aths or (P)hysics?: ")
-if d.upper() =="M":
+if d.upper() == "M":
 
     g = input("Do you want to (a)dd, (s)ubtract, (d)ivide, (m)ultiply?, (e)area of sqaure:  ")
     if g.upper() == "A":
@@ -24,12 +29,10 @@ if d.upper() =="M":
         x = int(input("length: "))
         y = int(input("breadth: "))
         print(solve.exp(x, y))
-       
-       
-       from phy import Physics
-solve = Physics()
-d = input("Will you like to perform (M)aths or (P)hysics?: ")
-if d.upper() =="P":
+
+
+
+elif d.upper() == "P":
 
     g = input("Do you want to calculate (m)ass, (v)elocity, (d)istance, (s)peed, (f)orce:  ")
     if g.upper() == "M":
@@ -51,8 +54,4 @@ if d.upper() =="P":
     elif g.upper() == "F":
         x = int(input("mass: "))
         y = int(input("acceleration: "))
-        print(solve.Force(x, y))
-
-
-
-
+        print(solve.force(x, y))
