@@ -10,6 +10,7 @@ if d.upper() == "M":
 
     g = input("Do you want to (a)dd, (s)ubtract, (d)ivide, (m)ultiply?, (e)area of sqaure:  ")
     if g.upper() == "A":
+        solve = Maths()
         x = int(input("type first number: "))
         y = int(input("second number: "))
         print(solve.add(x, y))
