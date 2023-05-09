@@ -4,7 +4,7 @@ solve = Maths()
 
 from phy import Physics
 
-solve = Physics()
+
 d = input("Will you like to perform (M)aths or (P)hysics?: ")
 if d.upper() == "M":
 
@@ -34,7 +34,7 @@ if d.upper() == "M":
 
 
 elif d.upper() == "P":
-
+    solve = Physics()
     g = input("Do you want to calculate (m)ass, (v)elocity, (d)istance, (s)peed, (f)orce:  ")
     if g.upper() == "M":
         x = int(input("type Force: "))
